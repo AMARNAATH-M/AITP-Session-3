@@ -1,0 +1,63 @@
+mishtee_css = """
+/* General Container Styling */
+.gradio-container {
+    background-color: #FAF9F6 !important;
+    color: #333333 !important;
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* Typography: Spaced-out Serif for Headings */
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 1.5rem;
+}
+
+/* Tables: Lightweight Sans-Serif */
+table, .thead, .tbody, .tr, .td {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 0.95rem;
+}
+
+/* Sharp Professional Lines: Borders and Edges */
+button, input, textarea, .form, .block, .gradio-container * {
+    border-radius: 0px !important; /* Removes 'bubbly' shapes */
+    border: 1px solid #333333 !important;
+    box-shadow: none !important; /* Removes shadows */
+}
+
+/* Button Styling: Sober Terracotta */
+button.primary {
+    background-color: #C06C5C !important;
+    color: #FAF9F6 !important;
+    border: 1px solid #C06C5C !important;
+    transition: opacity 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 10px 20px;
+}
+
+button.primary:hover {
+    opacity: 0.9;
+}
+
+/* Whitespace and Padding */
+.gap, .block {
+    margin-bottom: 40px !important;
+    padding: 20px !important;
+}
+
+/* Input Fields */
+input, textarea {
+    background-color: transparent !important;
+}
+
+/* Removal of default Gradio styling elements */
+.footer {
+    display: none !important;
+}
+"""
